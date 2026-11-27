@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Inbox Desk Reply settings</title>
+  <script type="text/javascript" src="https://appsforoffice.microsoft.com/lib/1/hosted/office.js"></script>
+  <script type="text/javascript" src="settings.js"></script>
+  <style>
+    body { font-family: Calibri, Arial, sans-serif; font-size: 14px; color: #1f2933; margin: 16px; }
+    h1 { font-size: 18px; margin: 0 0 12px 0; color: #102033; }
+    label { display: block; font-weight: bold; margin: 12px 0 4px 0; }
+    input { width: 100%; box-sizing: border-box; padding: 6px; font-size: 14px; }
+    button { margin-top: 16px; padding: 8px 16px; font-size: 14px; background: #102033; color: #ffffff; border: 0; }
+    p { line-height: 1.4; }
+    #status { margin-top: 12px; font-weight: bold; }
+  </style>
+</head>
+<body>
+  <h1>Inbox Desk Reply settings</h1>
+  <p>When you press Reply or Reply All, Inbox Desk writes a draft reply at the top of the email. Nothing is sent until you send it.</p>
+  <label for="url">Reply writer address</label>
+  <input id="url" type="url" autocomplete="off" placeholder="https://hook...">
+  <label for="key">Key</label>
+  <input id="key" type="password" autocomplete="off">
+  <button id="save" type="button">Save</button>
+  <div id="status" role="status"></div>
+</body>
+</html>
